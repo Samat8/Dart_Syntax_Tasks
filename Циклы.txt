@@ -1,0 +1,95 @@
+Циклы
+
+Четные числа
+void main(){
+int a = 20;
+int b = 50;
+for(int i = a; i <= b; i++){
+      if(i % 2 == 0){
+        print(i);
+      }
+  }
+}
+
+---
+
+подсчет нулей
+
+import 'dart:io';
+void main(){
+print("1 num");
+int? n = int.parse(stdin.readLineSync()!);
+print("2 num");
+int? a = int.parse(stdin.readLineSync()!);
+print("3 num");
+int? b = int.parse(stdin.readLineSync()!);
+int i = 0;
+if (a == 0){
+  i++;
+}
+if (b == 0){
+  i++;
+} 
+if (n == 0){
+  i++;
+}
+print("количество заданных нулей $i");
+}
+
+---
+
+Перевернутое число
+
+import 'dart:io';
+void main(){
+int n1 = 235;
+double n2 = 0;
+int n3 = 10;
+do{
+  double digit = n1 % 10;
+  n1 = n1 ~/ n3;
+  n2 = n2 * 10;
+  n2 = n2 + digit;
+  }
+while(n1>1);
+print (n2);
+}
+
+---
+
+сумма чисел
+
+import 'dart:io';
+ 
+void main() {
+  print('Enter N');
+  int N = int.parse(stdin.readLineSync()!);
+ 
+  int result = 0;
+  for (int i = N; i > 0; i = (i / 10).floor()) {
+    result += (i % 10);
+  }
+ 
+  print('Sum of digits\n$result');
+}
+
+---
+подсчет нулей 
+
+void main() {
+  int i = 0;
+  int s = 0;
+  var list = [0 , 2 , 3 , 0 , 0];
+  print(list);
+  for(s = s+i; i < list.length; i++)
+    if(list[i]==0){
+      s++;
+    } 
+  print("количество нулей в массиве $s");
+}
+
+
+
+
+
+
