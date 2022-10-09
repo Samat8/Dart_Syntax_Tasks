@@ -1,0 +1,55 @@
+Необходимо вывести все элементы массива с чётными числами.
+
+void main() {
+  var list = [1, 2 , 3 , 4 , 5 , 8];
+  print(list);
+  for(int i = 0; i < list.length; i++){
+    if(list[i] % 2 == 0){
+      print(list[i]);
+    }
+  } 
+}
+---
+
+Вывести элементы с четной нумерацией 
+void main() {
+  var list = [1, 2 , 3 , 4 , 5];
+  print(list);
+  for(int i = 0; i < list.length; i++){
+    if(i % 2 == 0){
+      print(list[i]);
+    }
+  } 
+}
+
+---
+
+Сумма элементов массива
+void main() {
+  var list = [1, 2 , -3 , 4 , -5, 8];
+  print(list); 
+  int sum = 0;
+  for(int i = 0; i < list.length; i++){
+    if(list[i] > 0){
+      sum+=list[i];
+    }
+  }
+  print(sum);
+}
+
+---
+Вывод максимального элемента в массиве
+
+import 'dart:math';
+main() {
+  var list = [1, 2 , 3 , 4 , 5];
+  print(list.reduce(max));   
+}
+
+---
+Переставить элементы в обратном порядке
+
+void main() {
+  var list = [1, 2 , 3 , 4 , 5];
+  print(list.reversed);
+}
